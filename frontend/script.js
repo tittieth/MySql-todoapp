@@ -1,7 +1,7 @@
-console.log("hello world");
+import printTodos from "./printTodos.js";
+import addTodo from "./addTodo.js";
+import { printLists } from "./printLists.js";
 
-fetch('http://localhost:3000/todos')
-.then(res => res.json())
-.then(data => {
-    console.log(data);
-})
+
+printTodos();
+printLists();
